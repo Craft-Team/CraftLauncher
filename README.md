@@ -38,4 +38,3 @@ CraftLauncher is licensed under the [GNU General Public License v3.0](LICENSE).
 You can reach out via [Craft-Team GitHub Organization](https://github.com/Craft-Team).
 
 ---
-_This README is a template. For detailed documentation and advanced configuration, please refer to the repository wiki (if available) or open an issue on GitHub._
