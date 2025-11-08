@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- SPLASH OPENING -->
+    <string name="app_name">Craft Launcher</string>
+
+    <string name="splash_agreement">Craft Launcher requires storage permission to manage and read game files. Craft
+        Launcher is fully open-source on GitHub, so please rest assured about your data security. The permission is
+        solely for the game to operate properly and poses no security risks.
+    </string>
+    <string name="splash_permission_msg">No storage permission, please grant Craft Launcher the permission.</string>
+    <string name="splash_permission_grant">Grant</string>
+    <string name="splash_permission_title">Permission to store needed</string>
+    <string name="splash_permission_close">Close the app</string>
+    <string name="splash_permission_settings">Settings</string>
+    <string name="splash_permission_settings_msg">You have chosen "Never Allow" Please manually grant storage
+        permissions in settings.
+    </string>
+    <string name="notification_permission">Craft Launcher requires permission to post notifications to prevent issues
+        with normal game installation or startup.
+    </string>
+
+    <!-- UPDATE -->
+    <string name="update_message_checking">UPDATE REQUIRED</string>
+    <string name="update_message_failed">Failed to Check for Updates</string>
+    <string name="update_message_latest">The app is already the latest version</string>
+    <string name="update_message_available">Update Available to Craft Launcher</string>
+    <string name="update_button_download">Update</string>
+    <string name="update_button_cancel">Cancel</string>
+
+    <!-- Eula -->
+    <string name="splash_title">Welcome to Craft Launcher</string>
+    <string name="splash_eula_load">Loading Eula</string>
+    <string name="splash_eula_load_failed">Gagal memuat EULA.</string>
+    <string name="splash_eula_cancel">Cancel</string>
+    <string name="splash_eula_accept">Agree</string>
+
+    <!-- ACCOUNT -->
+    <string name="account_add_server">Add Authentication Server</string>
+    <string name="account_add_server_url">Server URL</string>
+    <string name="account_add_server_name">Server Name</string>
+    <string name="account_cape">Cape</string>
+    <string name="account_create">Create Account</string>
+    <string name="account_create_offline">Create Offline Account</string>
+    <string name="account_create_microsoft">Create Microsoft Account</string>
+    <string name="account_create_external">Create External Account</string>
+    <string name="account_create_username">Username</string>
+    <string name="account_create_password">Password</string>
+    <string name="account_create_server">Authentication server</string>
+    <string name="account_create_server_not_select">No Authentication Server</string>
+    <string name="account_create_home">Home</string>
+    <string name="account_create_register">Register</string>
+    <string name="account_create_alert">Please provide enough account info first!</string>
+    <string name="account_injector_server">Authentication Server</string>
+    <string name="account_login">Login</string>
+    <string name="account_methods_offline">Offline Account</string>
+    <string name="account_methods_offline_name_invalid">Under normal circumstances, the game username can only contain
+        English characters, numbers and underscores, and the length cannot exceed 16 characters.\nSome legitimate
+        usernames: Tungsten, Tungsten_123;\nSome illegal usernames: Exam ple, Exam-a_%%%,
+        Tungsten_hello_world_hello_world.\nIf you believe that there is a corresponding mod or plugin on the server side
+        to remove this restriction, you can ignore this warning.
+    </string>
+    <string name="account_methods_yggdrasil">Mojang Account</string>
+    <string name="account_methods_authlib_injector">External Account</string>
+    <string name="account_methods_microsoft">Microsoft Account</string>
+    <string name="account_failed">Account refresh failed</string>
+    <string name="account_failed_expired">Credential has expired, you must delete your account and re-login.</string>
+    <string name="account_failed_no_character">There are no characters linked to this account.</string>
+    <string name="account_failed_connect_authentication_server">Unable to contact authentication servers, your Internet
+        connection may be down.
+    </string>
+    <string name="account_failed_connect_injector_server">Unable to connect to the authentication server. Please check
+        your network and make sure you entered the correct URL.
+    </string>
+    <string name="account_failed_server_disconnected">Cannot access authentication server. You can log in offline or try
+        to re-login.
+    </string>
+    <string name="account_failed_server_response_malformed">Invalid server response, the authentication server may not
+        be working.
+    </string>
+    <string name="account_failed_invalid_credentials">Incorrect password or rate limited, please try again later.
+    </string>
+    <string name="account_failed_invalid_token">Please try to re-login again.</string>
+    <string name="account_failed_invalid_password">Invalid password</string>
+    <string name="account_failed_migration">Your account needs to be migrated to a Microsoft account. If you already
+        did, you should re-login to your migrated Microsoft account instead.
+    </string>
+    <string name="account_failed_injector_download_failure">Unable to download authlib-injector. Please check your
+        network, or try switching to a different download mirror.
+    </string>
+    <string name="account_failed_character_deleted">The character has already been deleted.</string>
+    <string name="account_failed_ssl">An SSL error occurred while connecting to the server.</string>
+    <string name="account_failed_wrong_account">You have logged in to the wrong account.</string>
+    <string name="account_skin_invalid_skin">Invalid skin file</string>
+    <string name="account_methods_microsoft_error_add_family">Since you are not yet 18 years old, an adult must add you
+        to a family in order for you to play Minecraft.
+    </string>
+    <string name="account_methods_microsoft_error_country_unavailable">Xbox Live is not available in your current
+        country/region.
+    </string>
+    <string name="account_methods_microsoft_error_missing_xbox_account">Your Microsoft account does not have a linked
+        Xbox account yet. Please create one before continuing.
+    </string>
+    <string name="account_methods_microsoft_error_banned">Your account may have been banned by Xbox Live.\nYou can click
+        on "Ban Query" above for more details.
+    </string>
+    <string name="account_methods_microsoft_error_unknown">Failed to log in</string>
+    <string name="account_methods_microsoft_error_wrong_verify_method">Please log in using your account(like phone
+        number) and password on the Microsoft account login page. Please do not use a verification code to log in.
+    </string>
+    <string name="account_methods_microsoft_error_no_character">Your account does not own the Minecraft Java
+        Edition.\nThe game profile may not have been created.
+    </string>
+    <string name="account_methods_microsoft_error_add_family_probably">Please check if the age indicated in your account
+        settings is at least 18 years old. If not and you believe this is an error, you can go to official website to
+        change it.
+    </string>
+    <string name="account_methods_microsoft_close_page">Microsoft account authorization is now completed.</string>
+    <string name="account_methods_microsoft_hint">Please click on the "Login" button, a piece of code will be
+        automatically copied later, enter the code in the opened browser to finish the login process.
+    </string>
+    <string name="account_login_refresh">Re-login</string>
+    <string name="account_login_refresh_microsoft_hint">Because the account authorization is invalid, you need to re-add
+        your Microsoft account\nPlease click on the "OK" button, a piece of code will be automatically copied later,
+        enter the code in the opened browser to finish the login process.
+    </string>
+    <string name="account_select_character">Select character</string>
+    <string name="account_skin">Skin</string>
+    <string name="account_skin_type_default">Default</string>
+    <string name="account_skin_type_steve" translatable="false">Steve</string>
+    <string name="account_skin_type_alex" translatable="false">Alex</string>
+    <string name="account_skin_type_csl_api" translatable="false">Custom Skin Loader</string>
+    <string name="account_skin_type_csl_api_location_hint">CustomSkinAPI URL</string>
+    <string name="account_skin_type_csl_api_hint">You need to create a character with the same name as your offline
+        account on your skin provider website. Your skin will then be your uploaded skin to that site.
+    </string>
+    <string name="account_skin_type_local_file">Local Skin File</string>
+    <string name="account_skin_upload">Select skin file</string>
+    <string name="account_state_no_account">No account</string>
+    <string name="account_state_add">Click to add</string>
+
+    <!-- ACTION -->
+    <string name="action_refresh">Refresh</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_share">Share</string>
+    <string name="action_skip">Skip</string>
+
+    <!-- BUTTON -->
+    <string name="button_back">Back</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_copy">Copy</string>
+    <string name="button_download">Download</string>
+    <string name="button_export">Export</string>
+    <string name="button_hide">Hide</string>
+    <string name="button_install">Install</string>
+    <string name="button_mouse_left">Mouse Left</string>
+    <string name="button_mouse_right">Mouse Right</string>
+    <string name="button_next">Next</string>
+    <string name="button_paste">Paste</string>
+    <string name="button_prev">Prev</string>
+    <string name="button_remove">Remove</string>
+    <string name="button_remove_confirm">Are you sure you want to permanently remove it? This action cannot be undone!
+    </string>
+    <string name="button_save_as">Save As</string>
+    <string name="button_select_all">Select All</string>
+    <string name="button_set">Set</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_overwrite">Overwrite</string>
+    <string name="button_up" translatable="false">▲</string>
+    <string name="button_down" translatable="false">▼</string>
+    <string name="button_left" translatable="false">◀</string>
+    <string name="button_right" translatable="false">▶</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

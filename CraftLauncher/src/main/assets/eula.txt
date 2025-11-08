@@ -1,0 +1,49 @@
+Welcome to **Craft Launcher**, the official launcher created by **MoonX-Team** to play
+**Minecraft: Bedrock Edition** and **Minecraft: Java Edition** on your Android device.
+
+By using this launcher, you agree to all of the following terms:
+
+---
+
+### 1. Copyright
+Craft Launcher is the work and property of **MoonX Corporation**.
+All components such as the user interface (UI), update system, version management,
+and internal features are protected by copyright.
+It is prohibited to copy, modify, or redistribute the launcher without official permission
+from MoonX Corporation.
+
+---
+
+### 2. Use Obligations
+- Use this launcher only to access **officially and legally** owned versions of Minecraft.
+- Users are responsible for all activities and data stored on their devices.
+- **Non-premium** users can only access offline features such as:
+  - Trial mode
+  - Local/offline skins
+  - No access to Realms, Online Multiplayer, or Marketplace
+
+---
+
+### 3. Responsibility and Risk
+- Perform regular **backups of Minecraft worlds** to prevent data loss.
+- **Craft Launcher** is not responsible for damage, data loss,
+or errors resulting from third-party modifications or usage.
+
+---
+
+### 4. Automatic Updates
+The launcher can check for, download, and install automatic updates
+for Minecraft versions, mods, or resource packs if the user grants permission.
+These updates are intended to improve the stability and compatibility of the launcher.
+
+---
+
+### 5. Additional Terms
+- This launcher is not affiliated with **Mojang Studios** or **Microsoft**.
+- All Minecraft trademarks remain the property of their respective owners.
+- Craft Corporation reserves the right to update the EULA at any time without prior notice.
+
+---
+
+By clicking **“Agree”**, you acknowledge that you have read, understood,
+and agree to all the terms of this User Agreement.
