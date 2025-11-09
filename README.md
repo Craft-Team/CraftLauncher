@@ -14,65 +14,64 @@ Built on the backend of [PojavLauncher](https://github.com/PojavLauncherTeam/Poj
 
 It also includes built-in tools for managing **resources**, **worlds**, and **modifications**, making it a complete solution for players who want to manage versions, test mods, or optimize their gaming experience — all in one launcher.
 
-## Features 
+## Features
 
 ---
 
 **Full Minecraft Version Support**
-- Native support for semua versi Minecraft (termasuk snapshot terbaru)
-- Mod loader support: Forge, NeoForge, LiteLoader, OptiFine, Fabric, Quilt, dan lainnya
+- Native support for all Minecraft versions (including the latest snapshots)
+- Mod loader support: Forge, NeoForge, LiteLoader, OptiFine, Fabric, Quilt, and more
 
 **Java Runtime Management**
 - Built-in multi-version Java runtimes (Java 8/11/17/21)
-- Custom Java import: kamu bisa memasukkan Java runtime sendiri
+- Custom Java import: you can add your own Java runtime
 - OpenJDK Mobile port: ARM32, ARM64, x86, x86_64 (Java 8, 17, 21)
 
 **Modular & Advanced Technology**
-<!--- Mendukung renderer pluginization ([FCLRendererPlugin](https://github.com/ShirosakiMio/FCLRendererPlugin))-->
+<!--- Supports renderer pluginization ([FCLRendererPlugin](https://github.com/ShirosakiMio/FCLRendererPlugin))-->
 - Shaders support (VirGL/Zink/MG renderers)
-- OpenGL di lingkungan OpenJDK
-- OpenAL (audio) untuk kompatibilitas lebih luas
+- OpenGL in the OpenJDK environment
+- OpenAL (audio) for wider compatibility
 
 **Resource Management & Customization**
-- Manajemen dinamis: mods, modpacks, textures, shaders, saves, resource packs, serta dunia
-- Import, export, back up resource packs dan dunia dengan built-in manager
-- Tema personalisasi: background & color scheme pilihan
-- Zoom game surface
+- Dynamic management: mods, modpacks, textures, shaders, saves, resource packs, and worlds
+- Import, export, and back up resource packs and worlds with the built-in manager
+- Personalized themes: customizable backgrounds and color schemes
+- Zoomable game surface
 
 **Input & Controls**
-- Virtual mouse support dan key mapping yang bisa di-custom
-- Input pipe baru, diimplementasikan native untuk performa dan kompatibilitas tinggi
-- Sistem kontrol sepenuhnya baru dan lebih fleksibel
+- Virtual mouse support and customizable key mapping
+- New native input pipe implementation for high performance and compatibility
+- Completely rewritten, more flexible controls system
 
-**Installasi & Integrasi APK**
-- **APK Import & Installation-Free Launching:** Import APK Minecraft resmi dan jalankan langsung tanpa install sistem
-- **SO Module Loading:** Bisa memuat modul native eksternal (SO) untuk menambah fitur atau performa
+**APK Installation & Integration**
+- **APK Import & Installation-Free Launching:** Import the official Minecraft APK and run it directly without system installation
+- **SO Module Loading:** Able to load external native SO modules for additional features or performance
 
-**Akun & Versi**
-- Multi-version management & version isolation: Setiap versi terpisah dan dapat dikonfigurasi unik
-- Multiple Xbox account management: Kelola dan switch akun Xbox dengan mudah
+**Accounts & Version Management**
+- Multi-version management & version isolation: each version runs separately with unique configuration
+- Multiple Xbox account management: easily manage and switch Xbox accounts
 
 **Mod Installer**
-- Headless mod installer & mod installer GUI
+- Headless mod installer & GUI mod installer
 
 **Minecraft Compatibility**
-- Support untuk Minecraft 1.12.2 dan di bawahnya
-- Support untuk Minecraft 1.13 dan di atas
-- Support untuk Minecraft 1.17 (22w13a) dan di atas
+- Supports Minecraft 1.12.2 and below
+- Supports Minecraft 1.13 and above
+- Supports Minecraft 1.17 (22w13a) and above
 
 ---
 
 ### Current Status
 
 - [x] OpenJDK 8, 17, 21 Mobile port (ARM32/ARM64/x86/x86_64)
-- [x] Headless dan GUI mod installer
-- [x] OpenGL/OpenAL pada OpenJDK
+- [x] Headless and GUI mod installer
+- [x] OpenGL/OpenAL in OpenJDK
 - [x] Surface zoom
-- [x] Input pipe native
-- [x] Sistem kontrol baru
-- [x] Kompatibilitas lintas versi Minecraft
-- [ ] Fitur-lanjutan sedang dikembangkan!
-
+- [x] Native input pipe
+- [x] Rewritten controls system
+- [x] Cross-version Minecraft compatibility
+- [ ] Advanced features are under development!
 
 ## Installation
 
