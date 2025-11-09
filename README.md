@@ -89,7 +89,9 @@ It also includes built-in tools for managing **resources**, **worlds**, and **mo
 
 ---
 
-Feel free to fork and submit pull requests. All contributions are welcome! Check for existing issues and create one if you would like a new feature.
+Contributions are welcome! We welcome any type of contribution, not only code. For example, you can help improve the [wiki](https://craftteam.github.io/), contribute to the [translations](https://crowdin.com/project/craftlauncher), or submit bug reports and feature requests.
+
+Any code change should be submitted as a pull request. The description should explain what the code does and give steps to execute it.
 
 ## License
 
