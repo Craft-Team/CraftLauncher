@@ -1,8 +1,8 @@
 <!--<div align="center">
     <img width="75" src="/FCL/src/main/res/drawable/img_app.png"></img>
-</div>-->
+</div>
 
----
+----->
 
 # CraftLauncher
 
