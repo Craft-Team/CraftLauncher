@@ -21,26 +21,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CraftLauncher"
         tools:targetApi="31">
+        
+        <!-- SplashActivity sebagai launcher (activity pertama) -->
         <activity
                 android:name=".activity.SplashActivity"
                 android:screenOrientation="sensorLandscape"
+                android:exported="true"
+                android:resizeableActivity="true"
+                android:supportsPictureInPicture="false"
+                android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
                 tools:ignore="DiscouragedApi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
+        
+        <!-- MainActivity sebagai layar utama setelah splash dan EULA -->
         <activity
                 android:name=".activity.MainActivity"
-                android:screenOrientation="sensorLandscape">
-        </activity>
-        <activity
-                android:name=".activity.MainActivity"
-                android:screenOrientation="sensorLandscape">
-        </activity>
-        <activity
-                android:name=".activity.MainActivity"
-                android:screenOrientation="sensorLandscape">
-        </activity>
-        <activity
-                android:name=".activity.MainActivity"
-                android:screenOrientation="sensorLandscape">
+                android:screenOrientation="sensorLandscape"
+                android:exported="false"
+                android:resizeableActivity="true"
+                android:supportsPictureInPicture="false"
+                android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation">
         </activity>
     </application>
 

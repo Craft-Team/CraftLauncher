@@ -1,26 +1,22 @@
 package com.rhgdf.craftlauncher.activity
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.rhgdf.craftlauncher.R
-import com.rhgdf.craftlauncher.fragments.EulaFragment
 
-class MainActivity : AppCompatActivity(), EulaFragment.EulaCallback {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, EulaFragment(this))
-            .commit()
+        // MainActivity adalah layar utama launcher setelah EULA diterima
+        // Tambahkan logika launcher di sini (mis. tampilkan daftar server, dll)
     }
 
-    override fun onEulaResult(accepted: Boolean) {
-        if (accepted) {
-            // lanjut ke login atau main launcher
-        } else {
-            finish()
-        }
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        // Handle perubahan konfigurasi untuk multi-window/split screen
     }
 }

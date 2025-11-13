@@ -2,6 +2,8 @@ package com.rhgdf.craftlauncher.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,20 +62,62 @@ public class EulaFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        // Ambil callback dari Activity jika diimplementasikan, sebagai fallback jika fragment direkreasi
+        if (callback == null && context instanceof EulaCallback) {
+            callback = (EulaCallback) context;
+        }
+    }
+
     private void loadEulaFromAssets(Context context) {
-        try {
-            InputStream is = context.getAssets().open("eula.txt");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+        try (InputStream is = context.getAssets().open("eula.txt");
+             BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
             StringBuilder builder = new StringBuilder();
             String line;
             while ((line = reader.readLine()) != null) {
                 builder.append(line).append("\n");
             }
-            reader.close();
-            eulaTxt.setText(builder.toString());
+            
+            // Konversi Markdown sederhana ke HTML untuk tampilan yang lebih baik
+            String eulaText = builder.toString();
+            String htmlText = convertMarkdownToHtml(eulaText);
+            
+            // Set text dengan HTML formatting
+            Spanned spanned = Html.fromHtml(htmlText, Html.FROM_HTML_MODE_LEGACY);
+            eulaTxt.setText(spanned);
+            
         } catch (IOException e) {
-            eulaTxt.setText("Gagal memuat EULA dari assets.");
+            eulaTxt.setText("Gagal memuat EULA dari assets.\n\nError: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+    
+    /**
+     * Konversi Markdown sederhana ke HTML untuk tampilan yang lebih baik
+     */
+    private String convertMarkdownToHtml(String markdown) {
+        String html = markdown;
+        
+        // Konversi bold (**text** menjadi <b>text</b>)
+        html = html.replaceAll("\\*\\*([^*]+)\\*\\*", "<b>$1</b>");
+        
+        // Konversi heading (### text menjadi <h3>text</h3>)
+        html = html.replaceAll("###\\s+(.+)", "<h3>$1</h3>");
+        html = html.replaceAll("##\\s+(.+)", "<h2>$1</h2>");
+        html = html.replaceAll("#\\s+(.+)", "<h1>$1</h1>");
+        
+        // Konversi horizontal rule (--- menjadi <hr/>)
+        html = html.replaceAll("---", "<hr/>");
+        
+        // Konversi bullet points (- text menjadi • text)
+        html = html.replaceAll("\n-\\s+", "<br/>• ");
+        
+        // Konversi line breaks
+        html = html.replaceAll("\n\n", "<br/><br/>");
+        html = html.replaceAll("\n", "<br/>");
+        
+        return html;
     }
 }

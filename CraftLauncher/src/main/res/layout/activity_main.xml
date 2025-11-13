@@ -21,12 +21,23 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 android:titleTextColor="@android:color/white"
-                app:title="End User License Agreement"
-                app:navigationIcon="@drawable/ic_arrow_back"/>
+                app:title="Craft Launcher"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <!-- Konten utama -->
-    <include layout="@layout/fragment_eula"/>
+    <FrameLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Welcome to Craft Launcher!"
+                android:textSize="18sp"/>
+    </FrameLayout>
 
     <!-- Tombol tindakan tambahan -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -11,7 +11,8 @@
             android:id="@+id/eulaScroll"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:padding="16dp"
+            android:padding="20dp"
+            android:scrollbars="vertical"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/buttonContainer"
             app:layout_constraintStart_toStartOf="parent"
@@ -21,9 +22,12 @@
                 android:id="@+id/eulaTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
-                android:lineSpacingExtra="6dp"
+                android:textSize="15sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:lineSpacingExtra="4dp"
+                android:lineSpacingMultiplier="1.2"
+                android:fontFamily="sans-serif"
+                android:textIsSelectable="true"
                 android:text="Loading EULA..."/>
     </ScrollView>
 
@@ -41,7 +45,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Disagree"
+                android:text="Tolak"
+                android:textAllCaps="false"
                 style="@style/Widget.Material3.Button.OutlinedButton"/>
 
         <Space
@@ -53,7 +58,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Agree"
+                android:text="Setuju"
+                android:textAllCaps="false"
                 style="@style/Widget.Material3.Button.Filled"/>
     </LinearLayout>
 
